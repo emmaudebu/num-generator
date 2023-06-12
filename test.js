@@ -24,8 +24,13 @@ button.addEventListener("click", (event) => {
       // if it is even
       if (i % 2 === 0) {
         span.style.border = "1px solid green";
+        span.style.background = " green";
+        span.style.color = " white";
+        
       } else {
-        span.style.border = "1px solid red";
+        // span.style.border = "1px solid red";
+        span.style.background = "#007FFF";
+        span.style.color = " white";
       }
       span.classList.add("span_fix");
 
