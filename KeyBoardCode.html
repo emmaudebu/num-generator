@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./KeyBoardCode.css">
+    <title>KeybordCode</title>
+</head>
+<body>
+    <section>
+        <div class="pressed-key">
+            <p>YOU PRESS <span class="kbd"></span></p>
+        </div>
+        <div class="code">
+            <p>CODE:<span class="KEY"></span></p>
+        </div>
+    </section>
+
+
+    <script>
+
+        let kcode = document.querySelector( ".KEY")
+        let Press = document.querySelector(".kbd")
+        // Add an event listener for the 'keydown' event
+document.addEventListener('keydown', function(event) {
+  // Get the keyCode of the pressed key
+  var keyCode = event.keyCode || event.which;
+
+ 
+
+  kcode.innerText=keyCode
+
+  // You can perform additional actions based on the keyCode
+  // For example, check if the pressed key is the 'Enter' key
+  if (keyCode === 13) {
+    kcode.innerText="ENTER-KEY PRESSED"
+    
+  }
+  if (keyCode===32) {
+    kcode.innerText="SPACE-BAR PRESSED"
+    Press.innerText="SPACE-BAR PRESSED"
+}
+
+// Add an event listener for the 'keydown' event
+document.addEventListener('keydown', function(event) {
+  // Get the key that was pressed
+  var key = event.key;
+
+  // Display the pressed key in the console or on the page
+ Press.innerText=key
+  // You can also display it on the page by targeting an HTML element
+  // Example: document.getElementById('output').textContent = key;
+});
+});
+
+
+
+    </script>
+    
+</body>
+</html>
