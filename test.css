@@ -107,4 +107,16 @@ body #numbersContainer {
 }
 body #numbersContainer .span_fix {
   padding: 15px;
+}
+
+.keyGen {
+  flex-basis: 30%;
+  padding: 15px 10px;
+  background-color: green;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s ease;
 }/*# sourceMappingURL=test.css.map */
