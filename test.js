@@ -26,7 +26,12 @@ button.addEventListener("click", (event) => {
         span.style.border = "1px solid green";
         span.style.background = " green";
         span.style.color = " white";
-        
+
+        // if (i % 2 !== 0) {
+        //   span.style.border = "1px solid red";
+        //   span.style.background = " peru";
+        //   span.style.color = " white";
+        // }
       } else {
         // span.style.border = "1px solid red";
         span.style.background = "#007FFF";
